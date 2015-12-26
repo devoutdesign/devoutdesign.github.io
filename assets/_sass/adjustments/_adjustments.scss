@@ -1,0 +1,136 @@
+
+/*==========================================================================
+  Misc & Adjust
+ ========================================================================== */
+.row {
+    z-index: 9999;
+}
+
+.big {
+    font-size: 20pt;
+    font-weight: 300;
+}
+
+
+.blink:hover {
+    opacity: 0.9;
+}
+
+.half-offset {
+    margin-bottom: 75px !important;
+}
+
+.no-offset {
+    margin: 0 !important;
+    padding: 0;
+}
+
+.content,.container {
+    overflow: hidden;
+}
+
+.trans {
+    border: 0 !important;
+    background: 0 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.nobg {
+    background: 0;
+    border: 0;
+}
+
+.noborder {
+    border: 0 !important;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.theme-bg {
+    background-color: #ff7701 !important;
+}
+
+.normalize-font-top {
+    padding-top: 25px;
+}
+
+
+
+/* --- float --- */
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* --- align --- */
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+.align-center {
+    text-align: center;
+}
+
+
+#learnMore {
+    background-color: #faf4da;
+    color: #228f8d;
+}
+
+.cform {
+    padding-bottom: 25px;
+}
+
+#copyright {
+    color: #fff;
+}
+
+.formText {
+    color: #faf4da;
+}
+
+.pencil {
+    padding-bottom: 7px;
+}
+
+.code {
+    padding-bottom: 7px;
+}
+
+.mobile {
+    padding-bottom: 7px;
+}
+
+.mail {
+    padding-top: 7px;
+    padding-bottom: 13px;
+}
+
+.aboutModal {
+    padding-right: 10px;
+}
+
+#myModal {
+    background: linear-gradient(0deg, rgba(33, 143, 141, 0.75) 0%, rgba(173, 164, 140, 0.75) 100%);
+}
+
+
+
+/* --- icon box hover --- */
+.hi-icon-effect-5 .hi-icon {
+  color: #35A49C;
+  box-shadow: 0 0 0 4px #35A49C;
+}
+.no-touch .hi-icon-effect-5 .hi-icon:hover {
+  background: #35A49C;
+  box-shadow: 0 0 0 8px  #79CDC0;
+}
+

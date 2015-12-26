@@ -1,0 +1,32 @@
+/*===========================
+  --- Testimonial ----
+=========================== */
+.testimonial span.author a {
+  color: #79CDC0;
+}
+
+#testimonials{
+    background-image: url(/assets/images/cathedral-569340_1920.png);
+    background-size: cover;
+}
+
+#testimonals {
+    padding-top: 20px;
+    padding-bottom:40px;
+    position:relative;
+    margin-top:50px;
+}
+.testimonial i {
+    color: #fff;
+}
+.testimonial span.author {
+    color: #fff;
+    font-weight: 700;
+}
+
+.testimonial h5 {
+    color: #fff;
+    font-size: 18px;
+    font-family: Georgia, sans-serif;
+    line-height: 1.5em;
+}

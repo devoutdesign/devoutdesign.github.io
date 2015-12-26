@@ -1,0 +1,39 @@
+/* buttons */
+
+.btn-theme {
+  background: #79CDC0;
+}
+.btn-theme:hover,.btn-theme:focus,.btn-theme:active{
+  background: #35A49C;
+}
+.btn-cta,.btn-cta.btn-lg {
+  background: #35A49C;
+  border-color: #79CDC0;
+}
+
+.btn-cta:focus,.btn-cta:active{
+   border-color: #35A49C;
+}
+
+.btn {
+    border: 0;
+}
+
+.btn.bold {
+    font-weight: 600;
+}
+
+.btn-cta {
+    color: #ffffff;
+    border-bottom: 4px solid;
+}
+.btn-cta:hover {
+    color: #ffffff;
+}
+
+.btn-cta {
+    border-bottom: 2px solid;
+}
+.btn-cta.btn-lg {
+    border-bottom: 4px solid;
+}
