@@ -1,0 +1,21 @@
+//
+// Mixins
+//
+
+// Retina mixin to display images that have a standard version 
+// and a 2x version: logo.png and logo@2x.png
+@mixin retina($image, $size: contain, $file-type: png){
+    background-image: url(/assets/images/#{$image}.#{$file-type});
+    background-size: $size;
+    background-repeat: no-repeat;
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+           only screen and (min--moz-device-pixel-ratio: 1.5),
+           only screen and (min-device-pixel-ratio: 1.5){
+        background-image: url(/assets/images/#{$image}@2x.#{$file-type});
+        background-size: $size;
+        background-repeat: no-repeat;
+    }
+}
+// Example declaration usage: @include retina("logo");
+
