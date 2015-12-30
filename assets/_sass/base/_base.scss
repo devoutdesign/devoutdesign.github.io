@@ -2,7 +2,7 @@
   General
   ========================================================================== */
 body {
-    color:#777;
+    color: #777;
     background: #f7f7f7;
     font-size: 16px;
     line-height: 1.6em;
@@ -15,7 +15,7 @@ body {
 }
 
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Lato', sans-serif;
+    font-family: $sans;
 }
 h1, h2, h3, h4, h5, h6 {
     color:#222;
@@ -179,6 +179,3 @@ Media queries
     background-image: url(/assets/images/MergedLayers1.png);
     background-size: cover;
 }
-
-
-

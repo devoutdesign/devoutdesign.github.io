@@ -3,32 +3,34 @@
   --- Featured section ----
 =========================== */
 
-section.featured {
-    padding: 350px 0 0 20px;
-    background-image: url(/assets/images/MergedLayers.png), linear-gradient(0deg, rgba(33, 143, 141, 0.75) 0%, rgba(173, 164, 140, 0.75) 100%);
-    color: #fdfdfd;
+.featured {
+    background-image: url(/assets/images/hero-image.png), linear-gradient(0deg, rgba(33, 143, 141, 0.75) 0%, rgba(173, 164, 140, 0.75) 100%);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-section.featured h2.slogan {
-    color: #fff;
+.featured .row {
+    padding: 350px 0 125px 0;
+}
+
+.featured .slogan {
+    color: $white;
     font-size: 32px;
-    font-weight: 550;
-    font: serif;
 }
 
-section.featured h3.slogansub {
-    color: #fff;
+.featured .slogansub {
+    color: $white;
+    font-family: $serif;
     font-size: 24px;
-    font-weight: 300;
-    font: serif;
     font-style: italic;
+    font-weight: 300;
 }
 
- /* inner heading */
-section.featured.inner {
-    background: #eee;
-    padding: 150px 0 50px;
+.featured .btn {
+    background-color: $tan;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 0;
+    color: $teal;
 }
-
