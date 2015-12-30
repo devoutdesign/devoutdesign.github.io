@@ -1,16 +1,16 @@
-
-/*===========================
-  --- Featured section ----
-=========================== */
-
+// =========================================================================
+//  Featured Section
+//==========================================================================
 .featured {
-    background-image: url(/assets/images/hero-image.png), linear-gradient(0deg, rgba(33, 143, 141, 0.75) 0%, rgba(173, 164, 140, 0.75) 100%);
+    background-image: url(/assets/images/hero-image.png), 
+                      linear-gradient(0deg, rgba(33, 143, 141, 0.75) 0%, rgba(173, 164, 140, 0.75) 100%);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .featured .row {
-    padding: 350px 0 125px 0;
+    padding: 230px 0 95px 0;
 }
 
 .featured .slogan {
@@ -26,6 +26,11 @@
     font-weight: 300;
 }
 
+.btn-wrap {
+    position: relative;
+    z-index: 1;
+}
+
 .featured .btn {
     background-color: $tan;
     text-transform: uppercase;
@@ -33,6 +38,16 @@
     font-size: 12px;
     border-radius: 0;
     color: $teal;
+    &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 30%;
+        background-color: $tan;
+        position: absolute;
+        top: 50%;
+        z-index: -1;
+    }
 }
 
 .go-to-arrow {

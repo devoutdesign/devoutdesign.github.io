@@ -1,8 +1,15 @@
-/* buttons */
+// =========================================================================
+//  btn
+//==========================================================================
+.btn {
+  padding: 8px 20px;
+  line-height: 1;
+}
 
 .btn-theme {
   background: #79CDC0;
 }
+
 .btn-theme:hover,.btn-theme:focus,.btn-theme:active{
   background: #35A49C;
 }
