@@ -1,0 +1,39 @@
+// ==========================================================================
+//  section
+// ========================================================================== 
+.section {
+	.container {
+	    margin: 30px auto;
+	    background: $cream;
+	}
+
+	.title-wrapper {
+		margin-bottom: 2.5em;
+		text-align: center;
+	}
+
+	.section-title {
+		font-size: 2em;
+		text-transform: uppercase;
+		color: $brown;
+		&:after {
+			content: "";
+			display: block;
+			height: 2px;
+		    width: 100px;
+		    margin: 10px auto;
+			background-color: $brown;
+		}
+	}
+
+	.subheading {
+		max-width: 25%;
+		margin: 0 auto;
+		font-size: 1.125em;
+		font-weight: 300;
+	}
+
+	.col-md-3 {
+		text-align: center;
+	}
+}

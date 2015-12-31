@@ -5,71 +5,43 @@
 // Libraries
 @import url('//fonts.googleapis.com/css?family=Lato:400,300,700,900');
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
-@import "bootstrap";
-
-// Switch over to this structure:
-// * Base Styles
-// colors
-// base
-// * Modules
-// btn
-// section
-// block 
-// etc
-// * Layouts
-// row
-// section
-// grid
+@import url('//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
+//@import "bootstrap";
 
 // General Styles
 @import "base/typography";
 @import "base/base";
 @import "base/mixins";
 
-// Adjustments
-@import "adjustments/adjustments";
+// Modules
+@import "btn/btn";
+@import "social/social";
 
-// Margin and Padding
+// Layout
+@import "navigation/navigation";
 @import "margin-padding/marginpadding";
+@import "footer/footer";
+@import "section/section";
 
 // Testimonials
 @import "testimonials/testimonials";
 
-// Navigation
-@import "navigation/navigation";
-
-// Featured
+// Specific sections
 @import "featured/featured";
-
-// Flexslider
-@import "flexslider/flexslider";
-
-// Revolution Slider
-@import "revolution-slider/revolution-slider";
-
-// Portfolio
+@import "services/services";
 @import "portfolio/portfolio";
-
-// About
 @import "about/about";
-
-// Contact
 @import "contact/contact";
-
-// Clients
 @import "clients/clients";
-
-// Footer
-@import "footer/footer";
-
-// Social
-@import "social/social";
-
-// Blog
 @import "blog/blog";
 
-// Btn
-@import "btn/btn";
+// Sliders
+@import "flexslider/flexslider";
+@import "revolution-slider/revolution-slider";
+
+// Adjustments
+@import "adjustments/adjustments";
+
 
 //@import "font-awesome.css";
 //@import "overwrite.css"; // overwrite bootstrap standard
