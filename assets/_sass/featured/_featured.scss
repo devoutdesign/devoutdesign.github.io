@@ -35,12 +35,6 @@
 }
 
 .featured .btn {
-    background-color: $tan;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: .75em;
-    border-radius: 0;
-    color: $teal;
     &:after {
         content: "";
         display: block;
@@ -50,6 +44,9 @@
         position: absolute;
         top: 50%;
         z-index: -1;
+    }
+    &:hover {
+        color: $dark-gray;
     }
 }
 

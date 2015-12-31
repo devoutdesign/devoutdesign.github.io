@@ -2,28 +2,34 @@
 //  btn
 //==========================================================================
 .btn {
-  padding: 8px 20px;
-  line-height: 1;
+    padding: 8px 20px;
+    line-height: 1;
+    border-radius: 0;
+    background-color: $tan;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75em;
+    border-radius: 0;
+    color: $teal;
 }
 
 .btn-theme {
-  background: #79CDC0;
+    background: #79CDC0;
 }
 
-.btn-theme:hover,.btn-theme:focus,.btn-theme:active{
-  background: #35A49C;
+.btn-theme:hover,
+.btn-theme:focus,
+.btn-theme:active{
+    background: #35A49C;
 }
+
 .btn-cta,.btn-cta.btn-lg {
-  background: #35A49C;
-  border-color: #79CDC0;
+    background: #35A49C;
+    border-color: #79CDC0;
 }
 
 .btn-cta:focus,.btn-cta:active{
    border-color: #35A49C;
-}
-
-.btn {
-    border: 0;
 }
 
 .btn.bold {
@@ -34,6 +40,7 @@
     color: #ffffff;
     border-bottom: 4px solid;
 }
+
 .btn-cta:hover {
     color: #ffffff;
 }
