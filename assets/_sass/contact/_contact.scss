@@ -33,7 +33,6 @@
     .cform {
         position: relative;
         z-index: 999;
-        padding-bottom: 25px;
     }
 
     // Placeholder text styles
@@ -148,5 +147,32 @@
         font-family: $serif;
         box-sizing: border-box;
         border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section-contact .subheading {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section-contact .subheading {
+        max-width: 75%;
+    }
+    
+    .section-contact {
+        #contact-form input[type=text],
+        #contact-form input[type=email], 
+        #contactForm textarea {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width 767px) {
+    .section-contact .subheading {
+        max-width: 100%;
     }
 }

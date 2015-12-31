@@ -5,7 +5,22 @@
 	.container {
     	padding: 50px 100px 100px;
 	}
-	.service-col {
+
+	.service-col {	
+		.img-wrapper {
+			height: 65px;
+			margin-bottom: 30px;
+			img {
+			    display: block;
+			    margin: 0 auto;
+			    position: relative;
+			    top: 50%;
+			    -webkit-transform: translate(0, -50%);
+			    -ms-transform: translate(0, -50%);
+			    transform: translate(0, -50%);
+			}
+		}
+
 		h2 {
 			margin-bottom: 15px;
 			color: $brown;
@@ -19,5 +34,23 @@
 			font-weight: 300;
 			line-height: 1.25;
 		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.section-services .container {
+    	padding: 50px 50px 100px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+	.section-services .service-col {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.section-services .container {
+		padding: 40px;
 	}
 }

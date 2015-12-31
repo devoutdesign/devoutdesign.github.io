@@ -9,6 +9,23 @@
     background-position: center;
 }
 
+
+// Display when inview
+.featured.inview {
+    .slogan {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0px, 0);
+        -ms-transform: translate3d(0, 0px, 0);
+        transform: translate3d(0, 0px, 0);
+    }
+    .slogansub {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0px, 0);
+        -ms-transform: translate3d(0, 0px, 0);
+        transform: translate3d(0, 0px, 0);
+    }
+}
+
 .featured .row {
     padding: 230px 0 95px 0;
 }
@@ -17,6 +34,12 @@
     margin-bottom: 5px;
     color: $white;
     font-size: 2em;
+    transition: all 450ms;
+    // Hide for animation effect
+    opacity: 0;
+    -webkit-transform: translate3d(0, -25px, 0);
+    -ms-transform: translate3d(0, -25px, 0);
+    transform: translate3d(0, -25px, 0);
 }
 
 .featured .slogansub {
@@ -26,6 +49,12 @@
     font-size: 1.5em;
     font-style: italic;
     font-weight: 300;
+    transition: all 550ms;
+    // Hide for animation effect
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10px, 0);
+    -ms-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
 }
 
 .btn-wrap {
@@ -58,4 +87,26 @@
 .fa-angle-down {
     color: $white;
     font-size: 2.5em
+}
+
+@media screen and (max-width: 900px) {
+    .featured .btn:after {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .featured {
+        background-position: -520px 80px;
+    }
+    .featured .row {
+        padding-top: 310px;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .featured .btn:after {
+        width: 100%;
+    }
 }
