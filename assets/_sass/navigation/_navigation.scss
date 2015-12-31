@@ -80,8 +80,28 @@
     margin-top: -5px !important;
 }
 
-@media (max-width: 1199px) and (min-width: 768px) {
+// ========================================
+//  Media queries
+// ========================================
+
+@media only screen and (min-device-width : 979px) and (max-device-width : 1024px)  {
     .navbar-nav {
-        margin-top: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar.navbar-fixed-top {
+        background-color: $white;
+    }
+    .navbar .navbar-collapse ul.nav {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: $dark-gray;
+        float: none;
+    }
+    .navbar .navbar-collapse ul.nav li {
+        border-bottom: 1px solid $dark-gray;
     }
 }
