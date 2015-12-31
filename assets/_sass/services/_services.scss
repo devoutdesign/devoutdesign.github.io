@@ -2,6 +2,9 @@
 //  services
 // ========================================================================== 
 .section-services {
+	.container {
+    	padding: 50px 100px 100px;
+	}
 	.service-col {
 		h2 {
 			color: $brown;
@@ -13,6 +16,7 @@
 			margin: 0 auto;
 			font-size: 1em;
 			font-weight: 300;
+			line-height: 1.25;
 		}
 	}
 }

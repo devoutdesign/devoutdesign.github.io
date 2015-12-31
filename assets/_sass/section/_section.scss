@@ -4,7 +4,7 @@
 .section {
 	.container {
 	    margin: 30px auto;
-	    background: $cream;
+	    background-color: $cream;
 	}
 
 	.title-wrapper {
@@ -13,6 +13,7 @@
 	}
 
 	.section-title {
+		margin: 0;
 		font-size: 2em;
 		text-transform: uppercase;
 		color: $brown;
