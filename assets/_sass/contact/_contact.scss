@@ -2,13 +2,12 @@
 //  Contact
 //==========================================================================
 .section-contact {
-    background-image: url(/assets/images/iron-image.png);
-    background-size: cover;
-    background-position: center;
-
     .container {
         padding: 30px 0;
         background-color: transparent;
+        background-image: url(/assets/images/iron-image.png);
+        background-size: cover;
+        background-position: center;
     }
 
     .col-md-5 {
@@ -34,6 +33,7 @@
     .cform {
         position: relative;
         z-index: 999;
+        padding-bottom: 25px;
     }
 
     // Placeholder text styles
