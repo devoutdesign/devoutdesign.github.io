@@ -18,6 +18,7 @@
     .section-title {
         color: $white;
         font-size: 2em;
+        font-weight: 600;
         &:after {
             width: 30%;
             background-color: $white;
@@ -26,7 +27,7 @@
 
     .subheading {
         max-width: 33%;
-        color: $cream;
+        color: $tan;
         font-size: 1.125em;
     }
     
@@ -39,22 +40,22 @@
     ::-webkit-input-placeholder {
         font-family: $serif;
         font-size: 1.125em;
-        color: $brown;
+        color: lighten($brown, 30%);
     }
     :-moz-placeholder {
         font-family: $serif;
         font-size: 1.125em;
-        color: $brown;
+        color: lighten($brown, 30%);
     }
     ::-moz-placeholder {
         font-family: $serif;
         font-size: 1.125em;
-        color: $brown;
+        color: lighten($brown, 30%);
     }
     :-ms-input-placeholder { 
         font-family: $serif;
         font-size: 1.125em;
-        color: $brown;
+        color: lighten($brown, 30%);
     }
 
     #contact-form input[type=text],
