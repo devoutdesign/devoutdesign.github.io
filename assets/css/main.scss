@@ -1,95 +1,33 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Main CSS
 ---
-@charset "utf-8";
 
-@import "isotope.css";
-@import "bootstrap";
-@import "bootstrap-theme.css";
+// Libraries
+@import url('//fonts.googleapis.com/css?family=Lato:400,300,700,900');
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+@import url('//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
 
-@import url('http://fonts.googleapis.com/css?family=Lato:400,300,700,900');
-@import "font-awesome.css";
-@import "overwrite.css"; // overwrite bootstrap standard
-@import "animate.css";
+// General Styles
+@import "base/colors";
+@import "base/typography";
+@import "base/base";
+@import "base/mixins";
 
-@import "base";
+// Modules
+@import "btn/btn";
 
-/*
-skin/default.css
-#1 = 35A49C
-#2 = 79CDC0
-*/
-a {
-  color: #35A49C;
-}
-a:hover {
-  color: #79CDC0;
-}
+// Plugins
+@import "fancybox/fancybox";
 
-/* menu */
-.nav>li>a:hover {
-  color: #79CDC0;
-}
+// Layout
+@import "navigation/navigation";
+@import "section/section";
+@import "footer/footer";
 
-.navbar .navbar-nav > .active > a {
-  color: #79CDC0;
-}
-
-/* flexslider */
-.flex-control-paging li a {
-  background: #35A49C;
-}
-
-.flex-direction-nav a:hover{
-  background-color:#35A49C;
-}
-
-.testimonial span.author a {
-  color: #79CDC0;
-}
-
-/* --- icon box hover --- */
-.hi-icon-effect-5 .hi-icon {
-  color: #35A49C;
-  box-shadow: 0 0 0 4px #35A49C;
-}
-.no-touch .hi-icon-effect-5 .hi-icon:hover {
-  background: #35A49C;
-  box-shadow: 0 0 0 8px  #79CDC0;
-}
-
-
-/* portfolio */
-.portfolio-item .portfolio-desc {
-  background: #35A49C;
-}
-
-/* btn */
-.btn-theme {
-  background: #79CDC0;
-}
-.btn-theme:hover,.btn-theme:focus,.btn-theme:active{
-  background: #35A49C;
-}
-.btn-cta,.btn-cta.btn-lg {
-  background: #35A49C;
-  border-color: #79CDC0;
-}
-
-.btn-cta:focus,.btn-cta:active{
-   border-color: #35A49C;
-}
-
-/* contact */
-.validation {
-  color:#35A49C;
-}
-
-/* footer */
-.social-circle li a {
-  background:#35A49C;
-}
-
-a.scrollup{
-  background:#35A49C;
-}
+// Specific sections
+@import "featured/featured";
+@import "services/services";
+@import "portfolio/portfolio";
+@import "testimonials-about/testimonials-about";
+@import "contact/contact";
+@import "blog/blog";

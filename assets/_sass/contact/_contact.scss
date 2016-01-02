@@ -1,0 +1,179 @@
+// =========================================================================
+//  Contact
+//==========================================================================
+.section-contact {
+    .container {
+        padding: 30px 0;
+        background-color: transparent;
+        background-image: url(/assets/images/iron-image.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .col-md-5 {
+        margin: 0 auto;
+        float: none;
+    }
+    
+    .section-title {
+        color: $white;
+        font-size: 2em;
+        font-weight: 600;
+        &:after {
+            width: 30%;
+            background-color: $white;
+        }
+    }
+
+    .subheading {
+        max-width: 33%;
+        color: $tan;
+        font-size: 1.125em;
+    }
+    
+    .cform {
+        position: relative;
+        z-index: 999;
+    }
+
+    // Placeholder text styles
+    ::-webkit-input-placeholder {
+        font-family: $serif;
+        font-size: 1.125em;
+        color: lighten($brown, 30%);
+    }
+    :-moz-placeholder {
+        font-family: $serif;
+        font-size: 1.125em;
+        color: lighten($brown, 30%);
+    }
+    ::-moz-placeholder {
+        font-family: $serif;
+        font-size: 1.125em;
+        color: lighten($brown, 30%);
+    }
+    :-ms-input-placeholder { 
+        font-family: $serif;
+        font-size: 1.125em;
+        color: lighten($brown, 30%);
+    }
+
+    #contact-form input[type=text],
+    #contact-form input[type=email] {
+        margin-bottom: 15px;
+    }
+
+    #contact-form input[type=text],
+    #contact-form input[type=email], 
+    #contactForm textarea {
+        width: 100%;
+        background: $white;
+        color: $dark-gray;
+        font-family: $serif;
+        border: 0;
+        border-radius: 0;
+        font-size: 1.125em;
+        text-align: left;
+        vertical-align: middle;
+        padding: 25px;
+    }
+
+    #contact-form input[type=text]:focus,
+    #contact-form input[type=email]:focus, 
+    #contactForm textarea:focus {
+        background-color: darken($white, 15%);
+        box-shadow: none;
+        transition: background 0.25 ease-in;
+        -moz-transition: background 0.25 ease-in;
+        -webkit-transition: background 0.25 ease-in;
+    }
+
+
+    #contact-form input[type=submit]:hover, 
+    #contact-form input[type=submit]:active {
+        background: $dark-gray !important;
+    }
+
+    #contact-form textarea {
+        padding-top: 1em;
+    }
+
+    .submit-btn-wrapper {
+        text-align: center;
+    }
+
+    textarea.form-control {
+        border-radius: 0;
+    }
+
+    div.cform-response-output {
+        max-width: 60%;
+        text-align: center;
+        margin-left: 40% !important;
+        margin-top: 0.5em !important;
+        padding: 0.5em !important;
+        border-radius: 4px;
+    }
+
+    .validation {
+        color: $teal;
+    }
+
+    .validation {
+        display: none;
+        margin: 0 0 20px;
+        font-size: .75em;
+    }
+
+    #sendmessage {
+        border: 1px solid $white;
+        display: none;
+        text-align: center;
+        padding: 15px 12px 15px;
+        margin: 10px 0;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    #sendmessage.show,.show  {
+        display: block;
+    }
+
+    .cform-not-valid-tip {
+        color: #888;
+        border: 1px dotted #ad3729 !important;
+        width: 100% !important;
+        left: 0 !important;
+        padding: 0.5em !important;
+        font-family: $serif;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section-contact .subheading {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section-contact .subheading {
+        max-width: 75%;
+    }
+    
+    .section-contact {
+        #contact-form input[type=text],
+        #contact-form input[type=email], 
+        #contactForm textarea {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width 767px) {
+    .section-contact .subheading {
+        max-width: 100%;
+    }
+}

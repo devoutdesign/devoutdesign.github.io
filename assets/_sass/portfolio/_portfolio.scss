@@ -1,0 +1,94 @@
+// =========================================================================
+//  Portfolio Section
+//==========================================================================
+.section-portfolio {
+    .container {
+        padding: 0 100px;
+        background-color: transparent;
+    }
+    .row {
+        text-align: center;
+    }
+    .section-title {
+        margin-bottom: 30px;
+        color: $teal;
+        text-align: center;
+        font-weight: 600;
+        &:after {
+            display: none;
+        }
+    }
+    .col-md-4 {
+        position: relative;;
+    }
+    .fancybox {
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid lightgray;
+            box-sizing: border-box;
+        }
+    }
+    .titlebox {
+        display: block;
+        width: 100%;
+        border-top: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $white;
+        text-align: left;
+        .titlebox-inner {
+            height: 120px;
+            margin: 0 15px;
+            border: 1px solid lightgray;
+            padding: 20px 30px 5px;
+            box-sizing: border-box;
+        }
+        .title {
+            margin-bottom: 5px;
+            color: $brown;
+            font-family: $serif;
+            font-size: 1.25em;
+        }
+        .external-link {
+            color: $teal;
+            font-size: .75em;
+            text-transform: uppercase;
+        }
+        .fa-external-link {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section-portfolio .container {
+        padding: 50px 50px 100px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .section-portfolio .titlebox .titlebox-inner {
+        height: inherit;
+        border: none;
+    }
+    .section-portfolio .titlebox {
+        margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .section-portfolio .titlebox .titlebox-inner {
+        padding: 10px 5px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section-portfolio .container {
+        padding: 40px;
+    }
+}

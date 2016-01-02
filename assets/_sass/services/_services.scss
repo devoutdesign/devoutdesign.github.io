@@ -1,0 +1,60 @@
+// ==========================================================================
+//  services
+// ========================================================================== 
+.section-services {
+	.container {
+    	padding: 50px 100px 100px;
+	}
+
+	.section-title {
+		font-weight: 600;	
+	}
+
+	.service-col {	
+		.img-wrapper {
+			height: 65px;
+			margin-bottom: 30px;
+			img {
+			    display: block;
+			    margin: 0 auto;
+			    position: relative;
+			    top: 50%;
+			    -webkit-transform: translate(0, -50%);
+			    -ms-transform: translate(0, -50%);
+			    transform: translate(0, -50%);
+			}
+		}
+
+		h2 {
+			margin-bottom: 15px;
+			color: $brown;
+			font-family: $serif;
+			font-size: 1.5em;
+		}
+		p {
+			width: 90%;
+			margin: 0 auto;
+			font-size: 1em;
+			font-weight: 300;
+			line-height: 1.5;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.section-services .container {
+    	padding: 50px 50px 100px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+	.section-services .service-col {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.section-services .container {
+		padding: 40px;
+	}
+}

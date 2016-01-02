@@ -1,0 +1,153 @@
+// =========================================================================
+//  Header and Menu
+//==========================================================================
+.navbar {
+    display: table-cell;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 1;
+    background-color: $white;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.navbar .navbar-collapse {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.navbar-fixed-top {
+    border: 0;
+}
+
+.nav li {
+    height: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.nav > li > a {
+    display: table-cell;
+    height: 100%;
+    padding-top: 29px;
+    padding-bottom: 30px;
+    color: $gray;
+    font-family: $serif;
+    font-weight: 300;
+    font-size: .938em;
+    line-height: 100%;
+    vertical-align: middle;
+    transition: all 300ms;
+}
+
+.nav > li > a:hover {
+    color: lighten($teal, 10%);
+    background: none;
+}
+
+.navbar-nav {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    float: right;
+}
+
+.navbar > .container .navbar-brand {
+    margin-left: 0;
+}
+
+.navbar-brand {
+    padding: 0;
+    margin-top: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    text-indent: -9999px; // hide text of logos
+}
+
+.navbar-brand .logo {
+    width: 355px; // width of non-@2x logo
+    height: 33px; // height of non-@2x logo
+    @include retina("logo");
+}
+
+.navbar-toggle {
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    width: 60px;
+}
+
+.fa-bars {
+    font-size: 2.25em
+}
+
+// ========================================
+//  Media queries
+// ========================================
+
+@media only screen and (min-device-width : 979px) and (max-device-width : 1024px)  {
+    .navbar-nav {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar.navbar-fixed-top {
+        height: inherit;
+        background-color: $white;
+    }
+    .container-fluid>.navbar-collapse, 
+    .container>.navbar-collapse {
+        margin-right: -75px;
+        margin-left: -75px;
+    }
+
+
+    .navbar-fixed-bottom .navbar-collapse, 
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 100%;
+    }
+
+    .nav > li > a {
+        display: block;
+        font-size: 1.75em;
+        color: $white;
+        text-align: center;
+    }
+
+    .nav > li > a:hover {
+        color: $dark-gray;
+    }
+    .navbar .container {
+        padding: 20px 35px 0;
+    }
+    .navbar .navbar-collapse ul.nav li {
+        text-align: center;
+    }
+    .navbar .navbar-collapse ul.nav {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: $teal;
+        float: none;
+    }
+    .navbar-brand {
+        margin-top: 10px;
+    }
+    .navbar-brand .logo {
+        width: 295px;
+        height: 28px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .navbar-brand .logo {
+        width: 235px;
+        height: 22px;
+    }
+    .navbar-toggle {
+        .fa-bars {
+            font-size: 2em;
+        }
+    }
+}
