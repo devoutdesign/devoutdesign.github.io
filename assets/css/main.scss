@@ -16,6 +16,9 @@
 // Modules
 @import "btn/btn";
 
+// Plugins
+@import "fancybox/fancybox";
+
 // Layout
 @import "navigation/navigation";
 @import "section/section";
@@ -24,13 +27,7 @@
 // Specific sections
 @import "featured/featured";
 @import "services/services";
-@import "testimonials-about/testimonials-about";
 @import "portfolio/portfolio";
+@import "testimonials-about/testimonials-about";
 @import "contact/contact";
 @import "blog/blog";
-
-//@import "font-awesome.css";
-//@import "overwrite.css"; // overwrite bootstrap standard
-//@import "animate.css";
-//@import "isotope.css";
-//@import "bootstrap-theme.css";

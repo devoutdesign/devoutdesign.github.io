@@ -37,4 +37,10 @@ $(document).ready(function(){
 	} else {
 		$('.inview-trigger').addClass('inview');
 	}
+
+	// Fancybox - open images for portfolio
+	$('.fancybox').fancybox({
+		openEffect	: 'fade',
+		closeEffect	: 'fade'
+	});
 });
