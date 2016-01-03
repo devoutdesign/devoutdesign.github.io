@@ -3,10 +3,19 @@ var mobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAg
 
 $(document).ready(function(){
 
+	// Create a go-to point in any section with data-id attribute
+	$('.section').each(function() {
+		// Find data attribute of all sections with class section
+		var sectionDataId = $(this).data('id');
+		// Add a new span to that section.section with an id matching its data attribute
+		$(this).prepend("<span class='jumpto-span'" + "id=" + sectionDataId + ">&nbsp;</span>");
+
+	});
+
 	// Smooth scrolling
 	$('.navbar-nav a, .go-to-arrow a').click(function(){
 	    $('html, body').animate({
-	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	        scrollTop: $( $.attr(this, 'href') ).offset().top - 74
 	    }, 500);
 	    return false;
 	});
