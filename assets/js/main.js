@@ -50,6 +50,9 @@ $(document).ready(function(){
 	// Fancybox - open images for portfolio
 	$('.fancybox').fancybox({
 		openEffect	: 'fade',
-		closeEffect	: 'fade'
+		closeEffect	: 'fade',
+		helpers		: {
+			title	: { type : 'inside' }
+		}
 	});
 });
