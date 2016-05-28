@@ -13,7 +13,7 @@ $(document).ready(function(){
 	});
 
 	// Smooth scrolling
-	$('.navbar-nav a, .go-to-arrow a').click(function(){
+	$('.navbar-nav a, .go-to-arrow a, .scroll-to-section').click(function(){
 	    $('html, body').animate({
 	        scrollTop: $( $.attr(this, 'href') ).offset().top - 74
 	    }, 500);
@@ -29,7 +29,7 @@ $(document).ready(function(){
 			$('.scrollup').fadeOut();
 		}
 	});
-	
+
 	// Click event to scroll to top
 	$('.scrollup').click(function(){
 		$('html, body').animate({scrollTop : 0},800);
@@ -41,7 +41,7 @@ $(document).ready(function(){
 		$('.inview-trigger').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
 			if (isInView) {
 				$(this).addClass('inview');
-			} 
+			}
 		});
 	} else {
 		$('.inview-trigger').addClass('inview');

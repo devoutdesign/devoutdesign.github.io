@@ -1,16 +1,16 @@
 // ==========================================================================
 //  services
-// ========================================================================== 
+// ==========================================================================
 .section-services {
 	.container {
     	padding: 50px 100px 100px;
 	}
 
 	.section-title {
-		font-weight: 600;	
+		font-weight: 600;
 	}
 
-	.service-col {	
+	.service-col {
 		.img-wrapper {
 			height: 65px;
 			margin-bottom: 30px;
@@ -37,6 +37,7 @@
 			font-size: 1em;
 			font-weight: 300;
 			line-height: 1.5;
+			text-align: left;
 		}
 	}
 }

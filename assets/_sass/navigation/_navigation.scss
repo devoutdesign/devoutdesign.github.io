@@ -90,20 +90,25 @@
         margin-top: 20px;
     }
 }
-
+@media (max-width: 992px) {
+  .navbar-brand .logo {
+    width: 295px;
+    height: 28px;
+  }
+}
 @media (max-width: 767px) {
     .navbar.navbar-fixed-top {
         height: inherit;
         background-color: $white;
     }
-    .container-fluid>.navbar-collapse, 
+    .container-fluid>.navbar-collapse,
     .container>.navbar-collapse {
         margin-right: -75px;
         margin-left: -75px;
     }
 
 
-    .navbar-fixed-bottom .navbar-collapse, 
+    .navbar-fixed-bottom .navbar-collapse,
     .navbar-fixed-top .navbar-collapse {
         max-height: 100%;
     }
