@@ -14,8 +14,11 @@
                     <div id="sendmessage">
                         Your message has been sent. Thank you!
                     </div>
-                    <form role="form" class="contact-form" accept-charset="UTF-8" action="https://formkeep.com/f/d1bca46c3b03" method="POST">
+                    <form role="form" class="contact-form" accept-charset="UTF-8" action="https://formspree.io/contact@devoutdesign.com" method="POST">
                       <input type="hidden" name="utf8" value="✓">
+                      <input type="hidden" name="_subject" value="Contact Form Submission">
+                      <input type="text" name="_gotcha" style="display:none">
+                      <input type="hidden" name="_next" value="http://www.devoutdesign.com/thank-you.html">
                       <div class="form-group">
                         <label class="sr-only" for="name">Your Name</label>
                         <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" required />
@@ -23,7 +26,7 @@
                       </div>
                       <div class="form-group">
                         <label class="sr-only" for="email">Your Email</label>
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required />
+                        <input type="email" class="form-control" name="_replyto" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required />
                         <div class="validation"></div>
                       </div>
                       <div class="form-group">
